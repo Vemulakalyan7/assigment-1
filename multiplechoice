@@ -1,0 +1,99 @@
+1. The ” var” and “function” are known as _____________
+   ans.Data types
+    explanation-the var and function are keyword.var is used for declare the varibales and store the data.Fuction is a block of statement it’s excute only when we call the function.
+
+2. Which of these is a correct output for the JavaScript code given below?
+   ans.undefined
+   Explanation-Here variable declare only use these three keywords(var,let,const),alert method is used for displaying the alret massege in form of dialog box.But here alert used as sum of two varibles.
+
+3. Which of these is known as the Equality operator used for checking whether both the values are equal?  
+   ans.(==)
+   explanation-Equality operator compare the both values and give boolen result.
+  
+4. function sayHi() {
+    console.log(name);
+    console.log(age);
+    var name = 'Lydia';
+    let age = 21;
+  }
+  
+  sayHi();
+  ans.Lydia and ReferenceError
+  explanation-Here printing variables before declaration var is excuted because it is global scope
+              let is a blockscope not possible
+
+5. for (var i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 1);
+  }
+  
+  for (let i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 1);
+  }
+ ans.3 3 3 and 0 1 2
+ explanation-
+
+ 6.function Person(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  
+  const lydia = new Person('Lydia', 'Hallie');
+  const sarah = Person('Sarah', 'Smith');
+  ans.Person {firstName: "Lydia", lastName: "Hallie"} and ReferenceError
+  explanation-It is constructor method,every time we use "new" keyword to create new object and set values,then only its excuted.
+
+7. function sum(a+b){
+    return a+b;
+}
+sum(1,"2")
+ans.It is sum of two data types are given "a" is number and "b" is string,
+
+8. let number = 0;
+  console.log(number++);
+  console.log(++number);
+   console.log(number);
+  ans.0 2 2 
+  explanation- post-increment=it increment and given old value
+                pre-increment=it’s increment and given updated value  
+    
+9. var num = 8;
+   var num = 10;
+                
+    console.log(num);
+   ans. 10
+   explanation-Here two same varibles taken different values, when we excute it gives updated value.                            
+ 
+
+10. const obj = { a: 'one', b: 'two', a: 'three' };
+   console.log(obj);
+  
+   ans: { a: "three", b: "two" }
+   explanation-here same varible taken different values but is excuted only updated value.
+
+11. Output of code 
+   var text = 'outside';
+   function logIt(){
+       console.log(text);
+       var text = 'inside';
+   };
+   logIt();
+   ans.inside
+
+15. Output of this code
+   var length = 10;
+   function fn() {
+       console.log(this.length);
+   }
+   
+   var obj = {
+     length: 5,
+     method: function(fn) {
+       fn();
+       arguments[0]();
+     }
+   };
+   
+   ans. Don't know answer
+
+16.console.log(typeof typeof 1);
+   ans.string
